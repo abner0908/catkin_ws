@@ -43,10 +43,9 @@ from std_msgs.msg import String
 def talker():
     pub = rospy.Publisher('chatter', String, queue_size=10)
     rospy.init_node('talker', anonymous=True)
-    rate = rospy.Rate(1) # 10hz
-    hostname = socket.gethostname()
+    rate = rospy.Rate(100) # 10hz
     while not rospy.is_shutdown():
-        hello_str = hostname + " say hello world at %s" % rospy.get_time()
+        hello_str = socket.gethostname(), "say hello world %s" % rospy.get_time()
         rospy.loginfo(hello_str)
         pub.publish(hello_str)
         rate.sleep()
