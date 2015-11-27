@@ -8,7 +8,7 @@ def callback(data):
     rospy.loginfo("diff = %.3f ms", diff.to_nsec()/1000000.0)
 
 def listener():
-    node_name = "listener_" + socket.gethostname()
+    node_name = "listener_ros_" + socket.gethostname().split("-")[1]
     rospy.init_node(node_name, anonymous=True)
     rospy.Subscriber("latency", Time, callback)
     rospy.spin()

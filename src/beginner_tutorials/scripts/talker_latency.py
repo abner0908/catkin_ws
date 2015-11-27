@@ -4,7 +4,7 @@ import socket
 from std_msgs.msg import Time
 
 def talker():
-    naode_name = "talker_" + socket.gethostname()
+    node_name = "talker_ros_" + socket.gethostname().split("-")[1]
     pub = rospy.Publisher('latency', Time, queue_size=10)
     rospy.init_node(node_name, anonymous=True)
     rate = rospy.Rate(10)
