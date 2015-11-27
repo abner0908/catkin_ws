@@ -1,10 +1,12 @@
 #!/usr/bin/env python
 import rospy
+import socket
 from std_msgs.msg import Time
 
 def talker():
+    naode_name = "talker_" + socket.gethostname()
     pub = rospy.Publisher('latency', Time, queue_size=10)
-    rospy.init_node('talker', anonymous=True)
+    rospy.init_node(node_name, anonymous=True)
     rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         pub.publish(rospy.Time.now())

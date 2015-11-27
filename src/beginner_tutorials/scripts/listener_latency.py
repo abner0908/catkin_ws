@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 import rospy
+import socket
 from std_msgs.msg import Time
 
 def callback(data):
@@ -7,7 +8,8 @@ def callback(data):
     rospy.loginfo("diff = %.3f ms", diff.to_nsec()/1000000.0)
 
 def listener():
-    rospy.init_node('listener', anonymous=True)
+    node_name = "listener_" + socket.gethostname()
+    rospy.init_node(node_name, anonymous=True)
     rospy.Subscriber("latency", Time, callback)
     rospy.spin()
 
