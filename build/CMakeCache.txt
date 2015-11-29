@@ -260,6 +260,12 @@ beginner_tutorials_SOURCE_DIR:STATIC=/home/abner0908/catkin_ws/src/beginner_tuto
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/jade/share/catkin/cmake
 
+//Value Computed by CMake
+cloud_robot_BINARY_DIR:STATIC=/home/abner0908/catkin_ws/build/cloud_robot
+
+//Value Computed by CMake
+cloud_robot_SOURCE_DIR:STATIC=/home/abner0908/catkin_ws/src/cloud_robot
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/jade/share/cpp_common/cmake
 
@@ -441,7 +447,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -17,10 +17,14 @@ SET(CMAKE_MAKEFILE_DEPENDS
   "beginner_tutorials/cmake/beginner_tutorials-genmsg.cmake"
   "catkin/catkin_generated/version/package.cmake"
   "catkin_generated/order_packages.cmake"
+  "cloud_robot/catkin_generated/ordered_paths.cmake"
+  "cloud_robot/catkin_generated/package.cmake"
   "/home/abner0908/catkin_ws/devel/share/beginner_tutorials/cmake/beginner_tutorials-msg-paths.cmake"
   "/home/abner0908/catkin_ws/src/CMakeLists.txt"
   "/home/abner0908/catkin_ws/src/beginner_tutorials/CMakeLists.txt"
   "/home/abner0908/catkin_ws/src/beginner_tutorials/package.xml"
+  "/home/abner0908/catkin_ws/src/cloud_robot/CMakeLists.txt"
+  "/home/abner0908/catkin_ws/src/cloud_robot/package.xml"
   "/opt/ros/jade/share/catkin/cmake/../package.xml"
   "/opt/ros/jade/share/catkin/cmake/all.cmake"
   "/opt/ros/jade/share/catkin/cmake/assert.cmake"
@@ -172,6 +176,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "beginner_tutorials/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "cloud_robot/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
