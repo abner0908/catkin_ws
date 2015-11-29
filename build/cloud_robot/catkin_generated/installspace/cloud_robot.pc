@@ -3,6 +3,6 @@ prefix=/home/abner0908/catkin_ws/install
 Name: cloud_robot
 Description: Description of cloud_robot
 Version: 0.0.0
-Cflags: 
+Cflags: -I/home/abner0908/catkin_ws/install/include
 Libs: -L/home/abner0908/catkin_ws/install/lib 
-Requires: 
+Requires: roscpp rospy std_msgs message_runtime
