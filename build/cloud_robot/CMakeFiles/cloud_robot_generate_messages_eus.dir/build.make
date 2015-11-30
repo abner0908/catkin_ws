@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/abner0908/catkin_ws/build
 include cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus.dir/progress.make
 
 cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/msg/Complex.l
+cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/srv/WordCountType.l
 cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/manifest.l
 
 /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/msg/Complex.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
@@ -54,13 +55,20 @@ cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus: /home/abner0908/catkin
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from cloud_robot/Complex.msg"
 	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/msg
 
-/home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/manifest.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/srv/WordCountType.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+/home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/srv/WordCountType.l: /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp code from cloud_robot/WordCountType.srv"
+	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/srv
+
+/home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/manifest.l: /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating EusLisp manifest code for cloud_robot"
 	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot cloud_robot std_msgs
 
 cloud_robot_generate_messages_eus: cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus
 cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/msg/Complex.l
+cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/srv/WordCountType.l
 cloud_robot_generate_messages_eus: /home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot/manifest.l
 cloud_robot_generate_messages_eus: cloud_robot/CMakeFiles/cloud_robot_generate_messages_eus.dir/build.make
 .PHONY : cloud_robot_generate_messages_eus

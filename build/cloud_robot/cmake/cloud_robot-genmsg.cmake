@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "cloud_robot: 1 messages, 0 services")
+message(STATUS "cloud_robot: 1 messages, 1 services")
 
 set(MSG_I_FLAGS "-Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg;-Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg")
 
@@ -21,6 +21,11 @@ add_custom_target(_cloud_robot_generate_messages_check_deps_${_filename}
   COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cloud_robot" "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg" ""
 )
 
+get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" NAME_WE)
+add_custom_target(_cloud_robot_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "cloud_robot" "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" ""
+)
+
 #
 #  langs = gencpp;geneus;genlisp;genpy
 #
@@ -35,6 +40,12 @@ _generate_msg_cpp(cloud_robot
 )
 
 ### Generating Services
+_generate_srv_cpp(cloud_robot
+  "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/cloud_robot
+)
 
 ### Generating Module File
 _generate_module_cpp(cloud_robot
@@ -49,6 +60,8 @@ add_dependencies(cloud_robot_generate_messages cloud_robot_generate_messages_cpp
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg" NAME_WE)
+add_dependencies(cloud_robot_generate_messages_cpp _cloud_robot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" NAME_WE)
 add_dependencies(cloud_robot_generate_messages_cpp _cloud_robot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -68,6 +81,12 @@ _generate_msg_eus(cloud_robot
 )
 
 ### Generating Services
+_generate_srv_eus(cloud_robot
+  "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/cloud_robot
+)
 
 ### Generating Module File
 _generate_module_eus(cloud_robot
@@ -82,6 +101,8 @@ add_dependencies(cloud_robot_generate_messages cloud_robot_generate_messages_eus
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg" NAME_WE)
+add_dependencies(cloud_robot_generate_messages_eus _cloud_robot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" NAME_WE)
 add_dependencies(cloud_robot_generate_messages_eus _cloud_robot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -101,6 +122,12 @@ _generate_msg_lisp(cloud_robot
 )
 
 ### Generating Services
+_generate_srv_lisp(cloud_robot
+  "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/cloud_robot
+)
 
 ### Generating Module File
 _generate_module_lisp(cloud_robot
@@ -115,6 +142,8 @@ add_dependencies(cloud_robot_generate_messages cloud_robot_generate_messages_lis
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg" NAME_WE)
+add_dependencies(cloud_robot_generate_messages_lisp _cloud_robot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" NAME_WE)
 add_dependencies(cloud_robot_generate_messages_lisp _cloud_robot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -134,6 +163,12 @@ _generate_msg_py(cloud_robot
 )
 
 ### Generating Services
+_generate_srv_py(cloud_robot
+  "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/cloud_robot
+)
 
 ### Generating Module File
 _generate_module_py(cloud_robot
@@ -148,6 +183,8 @@ add_dependencies(cloud_robot_generate_messages cloud_robot_generate_messages_py)
 
 # add dependencies to all check dependencies targets
 get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg" NAME_WE)
+add_dependencies(cloud_robot_generate_messages_py _cloud_robot_generate_messages_check_deps_${_filename})
+get_filename_component(_filename "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv" NAME_WE)
 add_dependencies(cloud_robot_generate_messages_py _cloud_robot_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

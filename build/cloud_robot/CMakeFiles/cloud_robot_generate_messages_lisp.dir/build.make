@@ -46,6 +46,7 @@ CMAKE_BINARY_DIR = /home/abner0908/catkin_ws/build
 include cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp.dir/progress.make
 
 cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp: /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/msg/Complex.lisp
+cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp: /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/srv/WordCountType.lisp
 
 /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/msg/Complex.lisp: /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
 /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/msg/Complex.lisp: /home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg
@@ -53,8 +54,15 @@ cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp: /home/abner0908/catki
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from cloud_robot/Complex.msg"
 	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/msg
 
+/home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/srv/WordCountType.lisp: /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py
+/home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/srv/WordCountType.lisp: /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Lisp code from cloud_robot/WordCountType.srv"
+	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/srv
+
 cloud_robot_generate_messages_lisp: cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp
 cloud_robot_generate_messages_lisp: /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/msg/Complex.lisp
+cloud_robot_generate_messages_lisp: /home/abner0908/catkin_ws/devel/share/common-lisp/ros/cloud_robot/srv/WordCountType.lisp
 cloud_robot_generate_messages_lisp: cloud_robot/CMakeFiles/cloud_robot_generate_messages_lisp.dir/build.make
 .PHONY : cloud_robot_generate_messages_lisp
 

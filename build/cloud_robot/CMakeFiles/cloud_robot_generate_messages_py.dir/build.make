@@ -46,7 +46,9 @@ CMAKE_BINARY_DIR = /home/abner0908/catkin_ws/build
 include cloud_robot/CMakeFiles/cloud_robot_generate_messages_py.dir/progress.make
 
 cloud_robot/CMakeFiles/cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py
+cloud_robot/CMakeFiles/cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py
 cloud_robot/CMakeFiles/cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/__init__.py
+cloud_robot/CMakeFiles/cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/__init__.py
 
 /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py: /home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg
@@ -54,15 +56,31 @@ cloud_robot/CMakeFiles/cloud_robot_generate_messages_py: /home/abner0908/catkin_
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG cloud_robot/Complex"
 	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg
 
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/gensrv_py.py
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py: /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python code from SRV cloud_robot/WordCountType"
+	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv -Icloud_robot:/home/abner0908/catkin_ws/src/cloud_robot/msg -Istd_msgs:/opt/ros/jade/share/std_msgs/cmake/../msg -p cloud_robot -o /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv
+
 /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/__init__.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/__init__.py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_2)
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/__init__.py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for cloud_robot"
 	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg --initpy
 
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/__init__.py: /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/__init__.py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py
+/home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/__init__.py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abner0908/catkin_ws/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python srv __init__.py for cloud_robot"
+	cd /home/abner0908/catkin_ws/build/cloud_robot && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/jade/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv --initpy
+
 cloud_robot_generate_messages_py: cloud_robot/CMakeFiles/cloud_robot_generate_messages_py
 cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/_Complex.py
+cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/_WordCountType.py
 cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/msg/__init__.py
+cloud_robot_generate_messages_py: /home/abner0908/catkin_ws/devel/lib/python2.7/dist-packages/cloud_robot/srv/__init__.py
 cloud_robot_generate_messages_py: cloud_robot/CMakeFiles/cloud_robot_generate_messages_py.dir/build.make
 .PHONY : cloud_robot_generate_messages_py
 

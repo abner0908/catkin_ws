@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg"
-services_str = ""
+services_str = "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
 pkg_name = "cloud_robot"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;genpy"

@@ -1,6 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/cloud_robot_generate_messages_cpp"
   "/home/abner0908/catkin_ws/devel/include/cloud_robot/Complex.h"
+  "/home/abner0908/catkin_ws/devel/include/cloud_robot/WordCountType.h"
 )
 
 # Per-language clean rules from dependency scanning.

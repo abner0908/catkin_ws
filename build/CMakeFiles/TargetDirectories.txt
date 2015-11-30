@@ -1,6 +1,7 @@
 /home/abner0908/catkin_ws/build/beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_AddTwoInts.dir
 /home/abner0908/catkin_ws/build/beginner_tutorials/CMakeFiles/_beginner_tutorials_generate_messages_check_deps_Num.dir
 /home/abner0908/catkin_ws/build/cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_Complex.dir
+/home/abner0908/catkin_ws/build/cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir
 /home/abner0908/catkin_ws/build/beginner_tutorials/CMakeFiles/beginner_tutorials_gencpp.dir
 /home/abner0908/catkin_ws/build/beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages.dir
 /home/abner0908/catkin_ws/build/beginner_tutorials/CMakeFiles/beginner_tutorials_generate_messages_cpp.dir

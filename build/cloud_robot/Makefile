@@ -164,6 +164,20 @@ _cloud_robot_generate_messages_check_deps_Complex/fast:
 .PHONY : _cloud_robot_generate_messages_check_deps_Complex/fast
 
 # Convenience name for target.
+cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/rule:
+	cd /home/abner0908/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/rule
+.PHONY : cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/rule
+
+# Convenience name for target.
+_cloud_robot_generate_messages_check_deps_WordCountType: cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/rule
+.PHONY : _cloud_robot_generate_messages_check_deps_WordCountType
+
+# fast build rule for target.
+_cloud_robot_generate_messages_check_deps_WordCountType/fast:
+	cd /home/abner0908/catkin_ws/build && $(MAKE) -f cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/build.make cloud_robot/CMakeFiles/_cloud_robot_generate_messages_check_deps_WordCountType.dir/build
+.PHONY : _cloud_robot_generate_messages_check_deps_WordCountType/fast
+
+# Convenience name for target.
 cloud_robot/CMakeFiles/cloud_robot_gencpp.dir/rule:
 	cd /home/abner0908/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 cloud_robot/CMakeFiles/cloud_robot_gencpp.dir/rule
 .PHONY : cloud_robot/CMakeFiles/cloud_robot_gencpp.dir/rule
@@ -296,6 +310,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... _cloud_robot_generate_messages_check_deps_Complex"
+	@echo "... _cloud_robot_generate_messages_check_deps_WordCountType"
 	@echo "... cloud_robot_gencpp"
 	@echo "... cloud_robot_generate_messages"
 	@echo "... cloud_robot_generate_messages_cpp"
