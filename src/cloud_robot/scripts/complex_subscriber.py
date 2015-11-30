@@ -2,6 +2,7 @@
 
 import roslib
 import rospy
+import utility
 from cloud_robot.msg import Complex
 
 def callback(msg):
@@ -9,6 +10,7 @@ def callback(msg):
     print 'Imaginary:', msg.imaginary 
     print
 
-rospy.init_node('complex_subscriber')
+node_name = "complex_sub_" + utility.get_hostname()
+rospy.init_node(node_name)
 sub = rospy.Subscriber('complex', Complex, callback)
 rospy.spin()

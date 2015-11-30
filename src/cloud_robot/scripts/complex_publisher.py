@@ -2,10 +2,12 @@
 
 import roslib
 import rospy
+import utility
 from cloud_robot.msg import Complex 
 from random import random
 
-rospy.init_node('complex_publisher')
+node_name = "complex_pub_" + utility.get_hostname()
+rospy.init_node(node_name)
 pub = rospy.Publisher('complex', Complex, queue_size = 20)
 rate = rospy.Rate(2)
 
