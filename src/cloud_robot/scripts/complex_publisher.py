@@ -14,4 +14,5 @@ while not rospy.is_shutdown():
     msg.real = random()
     msg.imaginary = random()
     pub.publish(msg)
+    print "publish Complex real: %f imaginary: %f" % (msg.real, msg.imaginary)
     rate.sleep()
