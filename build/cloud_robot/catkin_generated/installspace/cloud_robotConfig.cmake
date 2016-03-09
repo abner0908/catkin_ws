@@ -122,7 +122,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/abner0908/catkin_ws/install/lib;/home/abner0908/catkin_ws/devel/lib;/opt/ros/jade/lib)
+    foreach(path /home/abner0908/catkin_ws/install/lib;/home/abner0908/catkin_ws/devel/lib;/opt/ros/indigo/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -145,7 +145,7 @@ foreach(library ${libraries})
   endif()
 endforeach()
 
-set(cloud_robot_EXPORTED_TARGETS "cloud_robot_generate_messages_cpp;cloud_robot_generate_messages_eus;cloud_robot_generate_messages_lisp;cloud_robot_generate_messages_py")
+set(cloud_robot_EXPORTED_TARGETS "cloud_robot_generate_messages_cpp;cloud_robot_generate_messages_lisp;cloud_robot_generate_messages_py")
 # create dummy targets for exported code generation targets to make life of users easier
 foreach(t ${cloud_robot_EXPORTED_TARGETS})
   if(NOT TARGET ${t})
@@ -153,7 +153,7 @@ foreach(t ${cloud_robot_EXPORTED_TARGETS})
   endif()
 endforeach()
 
-set(depends "roscpp;rospy;std_msgs;message_runtime")
+set(depends "roscpp;rospy;std_msgs;message_runtime;actionlib_msgs")
 foreach(depend ${depends})
   string(REPLACE " " ";" depend_list ${depend})
   # the package name of the dependency must be kept in a unique variable so that it is not overwritten in recursive calls

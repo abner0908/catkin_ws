@@ -33,11 +33,34 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/msg" TYPE FILE FILES "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/msg" TYPE FILE FILES
+    "/home/abner0908/catkin_ws/src/cloud_robot/msg/Complex.msg"
+    "/home/abner0908/catkin_ws/src/cloud_robot/msg/Num.msg"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/srv" TYPE FILE FILES "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/srv" TYPE FILE FILES
+    "/home/abner0908/catkin_ws/src/cloud_robot/srv/WordCountType.srv"
+    "/home/abner0908/catkin_ws/src/cloud_robot/srv/AddTwoInts.srv"
+    "/home/abner0908/catkin_ws/src/cloud_robot/srv/SortingInts.srv"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/action" TYPE FILE FILES "/home/abner0908/catkin_ws/src/cloud_robot/action/Timer.action")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cloud_robot/msg" TYPE FILE FILES
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerAction.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerActionGoal.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerActionResult.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerActionFeedback.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerGoal.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerResult.msg"
+    "/home/abner0908/catkin_ws/devel/share/cloud_robot/msg/TimerFeedback.msg"
+    )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -46,10 +69,6 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/abner0908/catkin_ws/devel/include/cloud_robot")
-ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-
-IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/abner0908/catkin_ws/devel/share/roseus/ros/cloud_robot")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
